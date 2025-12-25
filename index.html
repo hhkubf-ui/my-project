@@ -11,6 +11,7 @@
             box-sizing: border-box;
         }
 
+        
         body {
             font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -619,7 +620,7 @@
     </div>
 
     <script>
-const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbyC-6_pYXvrOOqV3I0vahDG6JRsJ4ogonceuzlO4G5MDskyuzhEny9YBIvRy5bUm3aUVA/exec';
+const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzWXNm5e7sAS5-te85o1s6WRqw7JOsF_Xy1EoqlE_yqkR6S_ji9Q7xDr6HrpUFbecbaYA/exec';
 const API_ENDPOINT = GAS_WEB_APP_URL;  // 같은 URL 사용
 
        
@@ -699,7 +700,7 @@ const API_ENDPOINT = GAS_WEB_APP_URL;  // 같은 URL 사용
         // ==========================================
         
         async function callAI(prompt) {
-            const GEMINI_API_KEY = 'AIzaSyAsbCN0seQ6TGLVGv_iztJbe7onS7yghac';  // ⭐ 여기에 실제 API 키 입력!
+            const GEMINI_API_KEY = 'AIzaSyANdI6v_jxZrjDrLhcgeyw1VuXoUr5Y5BU';  // ⭐ 여기에 실제 API 키 입력!
             
             try {
                 const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${GEMINI_API_KEY}`, {
