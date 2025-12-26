@@ -756,9 +756,9 @@ async function fetchAIGeneratedText(prompt) {
   try {
     const response = await fetch(API_ENDPOINT, {
       method: 'POST',
-     // headers: {
-     //   'Content-Type': 'application/json'
-     // },
+      headers: {
+        'Content-Type': 'application/json'
+      },
       body: JSON.stringify({
         action: 'ai_generate',
         prompt: prompt
