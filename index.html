@@ -619,8 +619,11 @@
         </div>
     </div>
 
+<div id="app"></div>
+
     <script>
-const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycby2svrAlAh4MVk_QmvMw9MEHNpz38Wf5IdxQk9ECrA1wEIFz6rZRmRJAfgBTucuyrnUCA/exec';
+      /*
+const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzy4pHwlBtHN33UTiDtJKLNVaGdHNjPbFhsypct3p1ftpdOTQoBi4-dIBh2NkLyHhoKTA/exec';
 const API_ENDPOINT = GAS_WEB_APP_URL;  // 같은 URL 사용
 
        
@@ -753,9 +756,9 @@ async function fetchAIGeneratedText(prompt) {
   try {
     const response = await fetch(API_ENDPOINT, {
       method: 'POST',
-     // headers: {
-     //   'Content-Type': 'application/json'
-     // },
+      headers: {
+        'Content-Type': 'application/json'
+      },
       body: JSON.stringify({
         action: 'ai_generate',
         prompt: prompt
@@ -1758,6 +1761,8 @@ ${keywords}
             } finally {
                 showAILoading(false);
             }
+
+          
         }
 
         function completeCurrentStep(stepIndex) {
@@ -3072,7 +3077,7 @@ ${evaluationText}
                 
                 const response = await fetch(API_ENDPOINT, {
                     method: 'POST',
-                  //  headers: {'Content-Type': 'text/plain'},
+                    headers: {'Content-Type': 'text/plain'},
                     body: JSON.stringify({action: 'submit', data: sessionData})
                 });
                 
@@ -3165,6 +3170,7 @@ ${evaluationText}
         }
 
         window.onload = init;
+        */
     </script>
 </body>
 </html>
